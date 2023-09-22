@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/20c5629a29.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.16.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container nav">
+          <a class="navbar-brand a-row" href="/">
+            <div class="NIL_logo_Transparent">
+              <img
+                src="data:image/webp;base64,UklGRloBAABXRUJQVlA4IE4BAACwCgCdASpeAGAAPt1oq1KopaOipHM60RAbiWMA1o0USO7bEfgAiPMpYunwttHXQ2WUxKxNe/Uae+OF0X9mC6K4gjJP+qBgAPpal8eGFOT2g9qJlyOV7bw3cGMjn/wAAP7wG/mO6rSorlggFoCYBKjAUt/VXO+/ainvChfKeQdLQp6EqX8PfOf7dpf+ecxRAUeSMTufGWl6aQxEam256I4BtvhrgRy9qENKLl0WXRvHldArVqLuz/TUYx4160auHMGa9Uicj+e/gqd52qwEBGf8CNxSOc8n/cWEA6UdqrhuKACaujudXSr8gh5OaF6rLzjxpKLrOGtnkOff/oMwcmtdd2MiPLWzFxivi1mF0qvDhYZF62fZF7iZzACRZa9vFTr+azCJJkNzwfvxN+Gjx0WPkmPISAx0oqRj/bYXUGw+FGl4vON3KQ+nwOAAAAAA"
+              />
+            </div>
+            <h1 class="nil-header mt-3">
+              Not<span class="sub-header">In</span>Line
+            </h1>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto Group">
+              <li class="nav-item">
+                <a class="nav-link text-black home" href="/"> Home </a>
+              </li>
+              <li class="nav-item health-conditions">
+                <a class="nav-link text-black" href="/about">
+                  Health conditions
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-lightblue Lab-tests" href="/contact">
+                  Lab texts
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black medicines" href="/contact">
+                  medicines
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-none d-lg-flex">
+            <button type="button" class="btn btn-primary mr-3">
+              For patients
+            </button>
+            <button type="button" class="btn btn-primary mr-3">
+              For hospitals
+            </button>
+          </div>
+          <button
+            type="button"
+            class="btn btn-secondary bg-black text-white d-none d-lg-flex"
+          >
+            <i class="fa-brands fa-google-play"></i>
+            play store
+          </button>
+        </div>
+      </nav>
+      <div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="bg-form-container col-12 col-lg-6">
+              <div>
+                <div class="form-container col-12">
+                  <h2 class="form-heading">
+                    Fill in the details to get a call
+                  </h2>
+                  <form>
+                    <div class="align-row mb-3">
+                      <CgProfile class="mr-3 icon-img"></CgProfile>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your Name"
+                      />
+                    </div>
+
+                    <div class="align-row mb-3">
+                      <MdOutlineCall class="mr-3 icon-img"></MdOutlineCall>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="mobileNo"
+                        name="mobileNo"
+                        placeholder="Enter your Mobial Number"
+                      />
+                    </div>
+                    <div class="align-row mb-3">
+                      <ImLocation class="mr-3 icon-img text-blue"></ImLocation>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="location"
+                        name="location"
+                        placeholder="Enter your City"
+                      />
+                    </div>
+                    <div class="align-row mb-3">
+                      <input type="checkbox" class="check m-0" />
+                      <p class="paragraph m-0 ml-2 pl-3">
+                        By continuing you agree to our T&C and privacy policy
+                      </p>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                      Proceed
+                    </button>
+                  </form>
+                </div>
+              </div>
+
+              <div class="d-none col-lg-5">
+                <img
+                  src="https://www.pexels.com/photo/crop-black-woman-making-aromatic-liquid-incense-5760907/"
+                  alt="img"
+                />
+              </div>
+            </div>
+
+            <div class="d-none center d-lg-flex col-lg-5">
+              <h1 class="home-heading mt-2">
+                Best in Class <span class="sub-heading">lab texts!</span>
+              </h1>
+              <img
+                src="https://newsroom.unsw.edu.au/sites/default/files/styles/full_width__2x/public/thumbnails/image/221013_ovariancancer_1.jpg?itok=cntNNbpA"
+                class="scope-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 off-container d-flex justify-centent-center">
+        Get a Full Body Checkup Now at
+        <div class="OFF">70% OFF</div>
+      </div>
+      <div>
+        <div class="keep-container mb-2">
+          <div class="nabl-row">
+            <div class="keep bg-blue">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/d/d4/NABL_Official_LOGO_Registered.png"
+                class="keep-icon"
+              />
+              <p class="keep-paragraph">NABL Accredited Labs</p>
+            </div>
+            <div class="keep bg-blue">
+              <img
+                src="https://img.freepik.com/premium-vector/blood-test-illustration-concept-medical-healthcare-illustration-websites-landing-pages-mobile-applications-posters-banners-trendy-flat-vector-illustration_108061-971.jpg?w=740"
+                class="keep-icon"
+              />
+              <p class="keep-paragraph">Free sample collection</p>
+            </div>
+          </div>
+          <h1 class="sub-heading mt-5">
+            We Keep <span class="home-heading">expanding </span>!
+          </h1>
+          <div class="keep-row">
+            <div class="service-con">
+              <p class="keep-heading">5+</p>
+              <p class="keep-sub-paragraph">Labs</p>
+            </div>
+            <div class="service-con">
+              <p class="keep-heading">100+</p>
+              <p class="keep-sub-paragraph">collection center</p>
+            </div>
+            <div class="service-con">
+              <p class="keep-heading">1000+</p>
+              <p class="keep-sub-paragraph">Monthly texts</p>
+            </div>
+            <div class="service-con">
+              <p class="keep-heading">2200+</p>
+              <p class="keep-sub-paragraph">Text menu</p>
+            </div>
+            <div class="service-con">
+              <p class="keep-heading">5+</p>
+              <p class="keep-sub-paragraph">cities present in</p>
+            </div>
+          </div>
+        </div>
+        <div class="filters-container">
+          <div class="center">
+            <h1 class="sub-heading mt-3">
+              Top <span class="home-heading">packages </span>!
+            </h1>
+
+            <p class="top-paragraph">
+              Explore our wide range of texts! We ensume that you dont miss out
+              on any change to keep yourself healthy
+            </p>
+          </div>
+          <div class="content">
+            <div class="item">
+              <p class="top-paragraph m-0">Basic Full Body Checkup</p>
+              <p class="review">
+                4.3 <AiTwotoneStar class="star"></AiTwotoneStar> (43 Reviews)
+              </p>
+              <p class="review2">Number of texts - 53</p>
+              <h1 class="review">
+                MRP :
+                <p class="under-line">$13,299</p>
+                cost: '9000',
+              </h1>
+              <button class="btn btn-primary" type="button">Book now</button>
+            </div>
+            <div class="item">
+              <p class="top-paragraph m-0">Advance Full Body Checkup</p>
+              <p class="review">
+                4.3 <AiTwotoneStar class="star"></AiTwotoneStar> (43 Reviews)
+              </p>
+              <p class="review2">Number of texts - 53</p>
+              <h1 class="review">
+                MRP :
+                <p class="under-line">$13,299</p>
+                cost: '9000',
+              </h1>
+              <button class="btn btn-primary" type="button">Book now</button>
+            </div>
+            <div class="item">
+              <p class="top-paragraph m-0">Liver Function Test (LFT)</p>
+              <p class="review">
+                4.3 <AiTwotoneStar class="star"></AiTwotoneStar> (43 Reviews)
+              </p>
+              <p class="review2">Number of texts - 53</p>
+              <h1 class="review">
+                MRP :
+                <p class="under-line">$13,299</p>
+                cost: '9000',
+              </h1>
+              <button class="btn btn-primary" type="button">Book now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="why-choose-container col-12">
+            <div class="center col-12">
+              <h1 class="sub-heading mt-3">
+                Why <span class="home-heading">Choose </span>Us ?
+              </h1>
+
+              <p class="top-paragraph">
+                We want you and your heart to be healthy so you can live a happy
+                life!
+              </p>
+              <div class="row">
+                <div class="col-12 col-lg-4">
+                  <div class="nabl-container mt-3">
+                    <div class="d-flex">
+                      <p class="top-paragraph m-0">NABL Accredited Labs</p>
+                      <div class="logo-container">
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/en/d/d4/NABL_Official_LOGO_Registered.png"
+                          class="keep-icons"
+                          class="logo-container"
+                        />
+                      </div>
+                    </div>
+                    <p class="review">
+                      Get accurate and safe results from our NABL-certified lab
+                      partners.
+                    </p>
+                  </div>
+                  <div class="nabl-container mt-5 mt-5">
+                    <div class="d-flex">
+                      <p class="top-paragraph m-0">Timely collections</p>
+                      <div class="logo-container">
+                        <img
+                          src="https://t0.gstatic.com/images?q=tbn:ANd9GcTW2Zjti9tfgwdxm6SIPg8IvDDLm-2O1lrC3bV3F1HWMM16Ctwt"
+                          class="keep-icons"
+                        />
+                      </div>
+                    </div>
+                    <p class="review">
+                      We collect samples timely to prevent treatment delays and
+                      ensure your continued well-being.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="nabl-container mt-5">
+                    <div class="d-flex">
+                      <p class="top-paragraph m-0">Value experience</p>
+                      <div class="logo-container space">
+                        <img
+                          src="https://as2.ftcdn.net/v2/jpg/01/39/89/11/1000_F_139891100_1Qzc2uxDE1fLCjMXNeZ9F2X8VlGDmT1e.jpg"
+                          class="keep-icons"
+                        />
+                      </div>
+                    </div>
+                    <p class="review">
+                      Experience seamless care without the hassle of waiting in
+                      long lines for an appointment. Book with us for a
+                      healthier lifestyle.
+                    </p>
+                  </div>
+                  <div class="nabl-container mt-3">
+                    <div class="d-flex">
+                      <p class="top-paragraph m-0">Transparency</p>
+                      <div class="logo-container">
+                        <img
+                          src="https://img.freepik.com/premium-vector/telemedicine-online-online-doctor-consultation-technology-smartphone-recommend-treatment-through-smartphone-application_610956-1257.jpg?w=996"
+                          class="keep-icons"
+                        />
+                      </div>
+                    </div>
+                    <p class="review">
+                      Enjoy hassle free medical assistance with our transparent
+                      approach. We prioritize transparency for your smooth
+                      medical journey.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <img
+                    src="https://res.cloudinary.com/dyukfze9f/image/upload/v1695144640/expressive-young-woman-posing-studio-removebg-preview-transformed_1_myub3t.png"
+                    class="docter"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer-client">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <img
+                src="https://media.licdn.com/dms/image/C560BAQFLFra16nFV5g/company-logo_200_200/0/1649847974146?e=1703721600&v=beta&t=hbjMR_uHmvqtYBURLLGACCgkKfb8MBwLztILik_P4-s"
+                alt="img"
+                class="img"
+              />
+            </div>
+            <div class="col-12 col-md-5">
+              <h1 class="footer-text">
+                Book a docter appointments online and get your aliments treated
+                in no time with our expert medical support systems. cet rid of
+                all your medical problem with our expert panel of docters who
+                guide you towards a healthier life.
+              </h1>
+              <div class="input ml-0 pl-0 d-none d-lg-flex">
+                <p class="text pl-0 ml-0">+91</p>
+                <p class="line"></p>
+                <input type="number" class="input-element btn4" />
+                <p class="bounding-box">
+                  <i class="fa-regular fa-phone call"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-4 col-lg-2">
+              <div class="footer-container">
+                <h1 class="service-heading mb-3">Services</h1>
+                <ul>
+                  <li class="list-of-value">Appointments</li>
+                  <li class="list-of-value">Lab texts</li>
+                  <li class="list-of-value">A-Z medicine</li>
+                  <li class="list-of-value">Doctor support</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-4 col-lg-2">
+              <div class="footer-container">
+                <h1 class="service-heading mb-3">Legal</h1>
+                <ul>
+                  <li class="list-of-value">General info</li>
+                  <li class="list-of-value">Privacy policy</li>
+                  <li class="list-of-value">Terms of Services</li>
+                  <li class="list-of-value">Consultation</li>
+                  <li class="list-of-value">How it works</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-4 col-lg-3">
+              <div class="footer-container">
+                <h1 class="service-heading mb-3">Talk to Us</h1>
+                <ul>
+                  <li class="list-of-value">support@notinline.com</li>
+                  <li class="list-of-value">appointment@notinline.com</li>
+                  <li class="list-of-value">+91 12345 67899</li>
+                  <li class="list-of-value">+91 97642 09752</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-line-container">
+          <p class="footer-paragraph">
+            Copyrights © 2009 - 2023 Startupwala Pvt. Ltd.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </body>
+</html>
